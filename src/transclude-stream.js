@@ -23,7 +23,7 @@ const DEFAULT_OPTIONS = {
 };
 
 // The sourceFile should be relative to the sourcePath
-export default function Transcluder(source, opt) {
+export default function Transcluder(source = 'local', opt) {
   const options = _.merge({}, DEFAULT_OPTIONS, { relativePath: path.dirname(source) }, opt);
 
   // Sourcemap
