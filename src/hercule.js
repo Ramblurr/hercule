@@ -7,6 +7,8 @@ import Transcluder from './transclude-stream';
 
 const SYNC_TIMEOUT = 10000;
 
+export { resolveLink } from './resolve';
+
 export const TranscludeStream = Transcluder;
 
 export function transcludeString(...args) {
